@@ -1,10 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header";
 
 function App() {
+
+  const items = [];
+
   return (
-    <div className="App">
-      <h1>Hola mundo!</h1>
+    <div className="container">
+      <div className="row justify-content-center">
+        <Header />
+      </div>
     </div>
   );
 }
