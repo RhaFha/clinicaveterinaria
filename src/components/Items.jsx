@@ -2,15 +2,16 @@ import React from 'react';
 
 import Item from './Item';
 
-const Items = ({items}) => {
+const Items = ({items, deleteItem}) => {
+
     let display;
 
     if(items){
         display = items.map((x) => {
-
+            let {id} = x
           return (
             <>
-             <Item item={x} key={x.id}/>
+             <Item item={x} deleteItem={deleteItem} key={id}/>
             </>
            
           );
